@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@400;600;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,18 +15,22 @@ h1, h2, h3 {
 
 /* Efectos de neón personalizados */
 .text-neon-cyan {
-  color: #00FFFF;
+  color: #ea22bb;
   text-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 .text-neon-scarlet {
-  color: #FF4500;
-  text-shadow: 0 0 5px rgba(255, 69, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.5);
+  color: #00FFFF;
+  text-shadow: 0 0 5px rgba(14, 223, 255, 0.7), 0 0 10px rgba(14, 223, 255, 0.7);
 }
 
 .border-neon-cyan {
   border-color: #00FFFF;
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+.border-neon-scarlet {
+  border-color: #ff00c3;
+  box-shadow: 0 0 8px rgba(255, 0, 195, 0.951);
 }
 
 /* Animaciones */
@@ -62,9 +66,9 @@ h1, h2, h3 {
   
   /* Animación de pulso para CTA */
   @keyframes pulse-neon {
-    0% { box-shadow: 0 0 0px rgba(255, 69, 0, 0.5); }
-    50% { box-shadow: 0 0 15px rgba(255, 69, 0, 0.8), 0 0 25px rgba(255, 69, 0, 0.5); }
-    100% { box-shadow: 0 0 0px rgba(255, 69, 0, 0.5); }
+    0% { box-shadow: 0 0 0px rgb(244, 8, 130); }
+    50% { box-shadow: 0 0 15px rgba(244, 35, 143, 0.939), 0 0 25px rgb(238, 24, 135); }
+    100% { box-shadow: 0 0 0px rgba(232, 35, 137, 0.899); }
   }
   .animate-pulse-neon {
     animation: pulse-neon 2s infinite ease-in-out;
@@ -73,12 +77,19 @@ h1, h2, h3 {
   /* Animación de GLOW mejorada para el título principal */
   @keyframes glow {
     0%, 100% { 
-        text-shadow: 0 0 10px #FF4500, 0 0 20px #00FFFF; 
+        text-shadow: 0 0 10px #ea22bb, 0 0 20px #ea22bb; 
     }
     50% { 
-        text-shadow: 0 0 20px #FF4500, 0 0 40px #00FFFF; 
+        text-shadow: 0 0 30px #ea22bb, 0 0 40px #ea22bb; 
     }
   }
   .animate-glow {
     animation: glow 3s infinite alternate;
   }
+
+  .jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
