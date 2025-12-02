@@ -64,13 +64,10 @@ export default function Trailer() {
 
               {/* Video */}
               <div className="relative aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/SJF3HZHffAI"
-                  title="Trailer Zoon Game - Venganza Digital"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                <img
+                  className="w-full h-full object-cover"
+                  src="public/icons/controles.png"
+                  alt="Trailer Zoon Game - Venganza Digital"
                 />
               </div>
 
